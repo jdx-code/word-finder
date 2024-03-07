@@ -1,18 +1,21 @@
+
 #box{
     margin-top: 100px;
     text-align: center;
 }
 .a{
+    display: none;
     height: 180px;
     width: 23%;
     background-color: rgb(140, 220, 200);
     padding: 10px;
-    float: left;
-    position: relative;
     left:20px;
     margin-left: 80px;
     margin-top: 10px;
     border: 4px solid black
+}
+#box2{
+    display: flex;
 }
 p{
     text-align: center;

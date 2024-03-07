@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>word-finder</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        async function getData(){
+            const word = document.getElementById('word').value;
+            const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            console.log(response)
+        }
+    </script>
+    
 </head>
 <body>
     <div id="box">
         <h4>Enter the text here</h4>
-        <input type="text">
-        <button type="submit" style="width: 70px; height: 20px; background-color: rgb(118, 69, 226);">Click Me</button>
+        <input type="text" id="word" value="">
+        <button 
+            style="width: 70px; height: 20px; background-color: rgb(118, 69, 226);"
+            onclick=getData()
+        >
+            Click Me
+        </button>
     </div>
     <div id="box2">
         <div class="a">
